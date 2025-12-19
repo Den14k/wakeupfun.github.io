@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(170, 80, 253);
+}
+h1.verj{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: #d18efb;
+}
+div.head{
+    font-size: 1.3rem;
+    color: #0a0214;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #d18efb;
+}
+header{
+    background-color: rgb(149, 38, 253);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;    
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+input, select {
+    padding: 15px;
+    font-size: 1.1em;
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid #560073;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #9d00ff;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.grande { padding: 18px 40px; font-size: 1.4em; }
+
+.info { margin-top: 30px; font-size: 1.3em; color: #4a3c26; }
+
+#mensaje { margin-top: 20px; font-weight: bold; color: green; }
+
+.highlight {
+    background-color: rgb(133, 76, 172);
+    border: 4px solid #560073;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    #mensaje {
+        padding: 10px;
+        text-align: center; /* центрируем содержимое */
+    }
+
+    #mensaje button {
+        width: 100%;          /* кнопка на всю ширину */
+        font-size: 50px;      /* чуть меньше текст */
+        padding: 15px;        /* больше отступов для удобства */
+        margin: 10px 0 0 0;   /* сверху небольшой отступ */
+    }
+    p{
+        font-size: xx-large;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="WuF_css.css">
+    <title>WakeUpFun, pagina Principal</title>
+    <link rel="icon" type="image/PNG" href="img\WuF_logo.png">
+</head>
+
+<body>
+    <header>
+        <br><br>
+        <img src="img\WuF_logo.png" alt="WuF_logo">
+        <div class="highlight">
+            <div class="head">
+                <h1 class="verj">Wake Up Fun</h1>
+                <p>¡Despierta riendo con memes!</p>
+                <p>Bienvenidos! Crea tu alarma para despertarse con diversión</p>
+                <p>=)</p>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Elige hora y meme</h1>
+            <input type="time" id="hora" required>
+            <br><br>
+            <select id="meme">
+                <option value="e:\WuF\sonidos\the-sound-of-starting-windows-at-full-volume-300-take-care-of-your-ears.mp3">
+                    Windows-starting</option>
+                <option value="sonidos\amogus.mp3">AMOGUS</option>
+                <option value="sonidos\suka-blyat-2.mp3">SUKA BLYAT</option>
+                <option value="sonidos\spongebob-in-german.mp3">spongebob en aleman</option>
+                <option value="sonidos\swat-breaks-in.mp3">FBI OPEN UP</option>
+                <option value="sonidos\wake-up-meme.mp3">WAKE UP</option>
+                <option value="sonidos\why-are-you-oh-mom-came.mp3">Minecraft meme</option>
+                <option value="sonidos\silence-well-wake-up.mp3">¿POR QUÉ HAY LA SILENCIA ASÍ? ¡DESPERTAOS!</option>
+                <option value="sonidos\meme-man-sam.mp3">JHON CENA</option>
+                <option value="sonidos\dimon-from-the-brigade.mp3">Dimon</option>
+                <option value="sonidos\polish-cow.mp3">Polish cow</option>
+            </select>
+            <br><br>
+            <button onclick="previewMeme()" class="btn">Escuchar</button>
+            <button onclick="stopPreview()" class="btn">Detener</button>
+            <br><br>
+            <button onclick="guardarAlarma()" class="btn grande">Aceptar</button>
+            <br>
+            <p id="mensaje"></p>
+            <div id="mensaje"></div>
+            <script src="script.js"></script>
+            <p><strong>POR FAVOR, NO CIERES LA VENTANA O BROWSER!</strong></p>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
