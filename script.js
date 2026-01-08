@@ -99,3 +99,22 @@ function stopPreview() {
     }
 }
 
+let wakeLock = null;
+
+async function activarWakeLock() {
+    try {
+        wakeLock = await navigator.wakeLock.request("screen");
+        console.log("Wake Lock activado");
+    } catch (err) {
+        console.error("Wake Lock error:", err);
+    }
+}
+
+function desactivarWakeLock() {
+    if (wakeLock) {
+        wakeLock.release();
+        wakeLock = null;
+        console.log("Wake Lock desactivado");
+    }
+}
+
